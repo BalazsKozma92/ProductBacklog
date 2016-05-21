@@ -76,8 +76,34 @@ p {
 	float: right;
 }
 
+#box{
+	font-weight: bold;
+	transition: all .4s;
+	border-radius: 4px;
+	color: #222222;
+	background: #e3e3e3;
+	width: 80px;
+	text-align: center;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5), 0px 0px 0px 1px rgba(0,0,0,0.1);
+}
+
+#box:hover{
+	color: white;
+	background: #333;
+	cursor: pointer;
+}
+
 .button{
 	display: inline;
+	padding: 8px 18px;
+    background-color: #6666FF;
+    color: white;
+    padding: 6px 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+	border-radius: 6px;
 }
 
 .button a {

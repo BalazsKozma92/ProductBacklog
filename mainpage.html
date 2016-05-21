@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="mainpage.css">
+	<script src="main.js"></script>
+	<title>Product Backlog</title>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="nav"><br>
+			<nav id="navWrapper"><br>
+				<ul>
+					<li><a id="backlogItemsBtn">Add backlog items</a></li>
+						<div id="backlogItems" class="modal">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h2>Add backlog items</h2>
+								</div>
+								<div class="modal-body">
+									<p>Instructions will be here.</p>
+									<p>And more instructions.</p>
+								</div>
+								<div class="modal-footer">
+									<h3>Meh.</h3>
+								</div>
+							</div>
+						</div>
+						<script>
+						var modal = document.getElementById('backlogItems');
+						var btn = document.getElementById("backlogItemsBtn");
+
+						btn.onclick = function() {
+							modal.style.display = "block";
+						}
+						</script>
+						<li><a id="backlogListBtn">Backlog list</a></li>
+						<div id="backlogList" class="modal">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h2>Here is the backlog list.</h2>
+								</div>
+								<div class="modal-body">
+									<p>Mehmeh.</p>
+								</div>
+								<div class="modal-footer">
+									<h3>Mehhhh.</h3>
+								</div>
+							</div>
+						</div>
+						<script>
+						var modal2 = document.getElementById('backlogList');
+						var btn2 = document.getElementById("backlogListBtn");
+
+						btn2.onclick = function() {
+							modal2.style.display = "block";
+						}
+
+						window.onclick = function(event) {
+							if (event.target == modal2 || event.target == modal) {
+								modal2.style.display = "none";
+								modal.style.display = "none";
+							}
+						}
+						</script>
+						<li><a onclick="goBack()">Back</a><li>
+				</ul>
+			</nav>
+		</div>
+		<div class="content">
+			<div class="contentWrapper">
+			
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footerWrapper">
+			
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
