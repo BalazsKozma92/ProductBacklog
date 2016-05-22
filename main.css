@@ -1,3 +1,8 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
 body{
 	background: url("wallpaper.jpg");
 	background-position: center top;
@@ -7,7 +12,7 @@ body{
 body::after {
   content: "";
   background: url(wallpaper.jpg);
-  opacity: 0.1;
+  opacity: 0.8;
   top: 0;
   left: 0;
   bottom: 0;
@@ -16,30 +21,19 @@ body::after {
   z-index: -1;   
 }
 
-label{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 14px;
-}
-
-#wrapper{
-    margin: auto;
-    width: 400px;
-    position: relative;
-}
-
-.loginSignup {
-    position: absolute;
-    top: 80px;
+.loginSignup{
+	position: absolute;
     width: 50%;
-    padding: 5% 20% 10% 20%;
-    margin: 0 0 0 0;
+	height: 30%;
+    margin-top: 10%;
+	margin-left: 25%;
+	margin-right: 25%;
     background: rgba(247, 247, 247, 0.8);
-    
     box-shadow: 6px 6px 50px #696C6D inset;
-    border-radius: 20px;
+    border-radius: 5%;
 }
 
-#wrapper h1{
+.loginSignup h1{
 	font-size: 48px;
     color: rgb(6, 106, 117);
     padding: 0 0 0 0;
@@ -53,30 +47,30 @@ label{
 p {
     display: block;
 	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
-	font-size: 20px;
-}
-
-#username{
-	border-radius: 6px;
-}
-
-#password{
-	border-radius: 6px;
+	font-size: 1.2em;
+	padding: 0 20%;
 }
 
 .inputs{
-	padding: 5px;
+	width: 100%;
+	padding: 3%;
+	border-radius: 10px;
 }
 
-#loginbutton {
-	float: left;
+.uname{
+	margin: 5% auto;
 }
 
-#signUpButton {
-	float: right;
+.pword{
+	margin: 5% auto;
 }
 
-#box{
+#inputs{
+	width: 100%;
+	margin: 5% auto;
+}
+
+.box{
 	font-weight: bold;
 	transition: all .4s;
 	border-radius: 4px;
@@ -85,45 +79,25 @@ p {
 	width: 80px;
 	text-align: center;
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.5), 0px 0px 0px 1px rgba(0,0,0,0.1);
+	margin: 5% auto;
+	position: relative;
+	bottom: 5%;
 }
 
-#box:hover{
+.box:hover{
 	color: white;
 	background: #333;
 	cursor: pointer;
 }
 
-.button{
-	display: inline;
-	padding: 8px 18px;
-    background-color: #6666FF;
-    color: white;
-    padding: 6px 6px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-	border-radius: 6px;
+#boxVal{
+	float: left;
+	margin-left: 20%;
+	margin-top: 3%;
 }
 
-.button a {
-	padding: 8px 18px;
-    background-color: #6666FF;
-    color: white;
-    padding: 6px 6px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-	border-radius: 6px;
-
-}
-
-.button a:hover{
-	background-color: #9999FF;
-	color: black;
-}
-
-.button a:active {
-	top: 2px;
+#boxReg{
+	float: right;
+	margin-right: 20%;
+	margin-top: 3%;
 }

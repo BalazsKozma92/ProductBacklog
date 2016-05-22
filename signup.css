@@ -1,0 +1,65 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: url("wallpaper.jpg");
+	background-position: center top;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+body::after {
+  content: "";
+  background: url(wallpaper.jpg);
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+#wrapper{
+	position: absolute;
+    width: 20%;
+	height: 30%;
+    margin-top: 8%;
+	margin-left: 37.5%;
+	margin-right: 37.5%;
+    background: rgba(247, 247, 247, 0.8);
+    box-shadow: 6px 6px 50px #696C6D inset;
+    border-radius: 5%;
+}
+
+#formDiv{
+	text-align: center;
+	margin-top: 3%;
+}
+
+.box{
+	font-weight: bold;
+	transition: all .4s;
+	border-radius: 4px;
+	color: #222222;
+	background: #e3e3e3;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5), 0px 0px 0px 1px rgba(0,0,0,0.1);
+	padding: 1% 2%;
+}
+
+.box:hover{
+	color: white;
+	background: #333;
+	cursor: pointer;
+}
+
+#submit{
+	float:left;
+	margin-left: 25%;
+}
+
+#back{
+	float:right;
+	margin-right: 25%;
+}

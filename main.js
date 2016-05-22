@@ -2,14 +2,14 @@ function goBack() {
     history.back();
 }
 
-function doFirst(){
-	var box = document.getElementById("box")
-	box.addEventListener("click", goThere, false);
+function goMain(){
+	window.open("main_loginpage.php", "_self");
 }
 
-window.addEventListener("load", doFirst, false);
+function register(){	
+	window.location.href = "signup.php";	
+}
 
-
-function goThere(){
+function validate(){
 	window.location.href = "mainpage.html";
 }
