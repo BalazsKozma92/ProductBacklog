@@ -89,15 +89,3 @@ p {
 	background: #333;
 	cursor: pointer;
 }
-
-#boxVal{
-	float: left;
-	margin-left: 20%;
-	margin-top: 3%;
-}
-
-#boxReg{
-	float: right;
-	margin-right: 20%;
-	margin-top: 3%;
-}

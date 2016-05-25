@@ -26,15 +26,7 @@
 </html>
 
 <?php
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "registration";
-
-	$con = new mysqli($servername, $username, $password, $dbname);
-	if ($con->connect_error) {
-		die("Connection failed: " . $con->connect_error);
-	} 
+	include("connect.php");
 	
 	if(isset($_POST['submit'])){
 		$userName = $_POST['uname'];
@@ -42,16 +34,25 @@
 		$passwordRe = $_POST['pwordRe'];
 		$sql = "INSERT INTO registration.users (userName, password)
 			VALUES ('$userName', '$password')";
-		if ($con->query($sql) === TRUE) 
-		{
-			echo "New record created successfully";
+			
+		if($password == $passwordRe){
+			if ($con->query($sql) === TRUE) 
+			{
+				echo "New record created successfully";
+				$q = mysqli_query($con, "UPDATE registration.users SET password = MD5(password)");
+			} 
+			else 
+			{
+				echo "Error: " . $sql . "<br>" . $con->error;
+			}
 		} 
 		else 
-		{
-			echo "Error: " . $sql . "<br>" . $con->error;
+		{ 
+			echo '<script language="javascript">';
+			echo 'alert("The passwords do not match.")';
+			echo '</script>';
 		}
 	}
-
-
+	
 	$con->close();
 ?>
