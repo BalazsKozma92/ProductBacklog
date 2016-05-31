@@ -37,9 +37,14 @@ label{
     position: relative;
     margin-top: 7px;
     font-size: 14px;
-    border: 1px solid rgba(0, 0, 0, .49);
+    border: 1px solid rgba(0, 0, 0, .5);
     padding-left: 20px;
     border-radius: 6px;
+}
+
+#contactform input[type="text"]:focus, #contactform input[type="password"]:focus {
+    background: #f3f3f3;
+	outline: none;
 }
 
 #submitbtn{
