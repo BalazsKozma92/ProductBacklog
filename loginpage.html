@@ -7,21 +7,21 @@
 	<script src="main.js"></script>
 	<title>Product Backlog</title>
 </head>
-<body>	
-	<div class="loginSignup">
-		<h1>Login</h1>
-		<div id="inputs">
-			<p>
-				<label for="username" class="uname">Enter your username</label><br>
-				<input class="inputs" id="username" name="username" type="text" placeholder="Username">
-			</p>
-			<p>
-				<label for="password" class="pword">Enter your password</label><br>
-				<input class="inputs" id="password" name="password" type="password" placeholder="Password">
-			</p>	
-				<input id="submit" class="box" type="submit" name="submit" value="Submit">
-				<div class="box" id="boxReg" onclick="register()">Register</div>
+<body>
+	<form name="contact" id="contactform" type="post" action="#" onsubmit="#" id="textform">
+		<div class="form-group">
+			<div class="field-write">
+				<label for="userName">Username:</label><br>
+				<input class="inputfield" id="userName" type="text" name="userName" size="30" placeholder="Enter your username"><br>
+			</div>
+			<div class="field-write">
+				<label for="email">Password:</label><br>
+				<input class="inputfield" id="password" type="password" name="password" size="30" placeholder="Enter your password"><br>
+			</div>
+			<div id="submitbtn">
+				<input type="submit" value="Login">
+			</div>
 		</div>
-	</div>
+	</form>
 </body>
 </html>
