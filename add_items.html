@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add backlog item</title>
+    <link type="text/css" rel="stylesheet" href="add_items_style.css">
+</head>
+<body>
+    <span id="id"></span>
+    <input type="text" maxlength="50" id="title" />
+    <br>
+    <select id="status_list">
+        <option value="new" selected>New</option>
+        <option value="approved">Approved</option>
+        <option value="committed">Committed</option>
+        <option value="done">Done</option>
+    </select>
+    <div id="description">
+        <p>Description:</p>
+
+            <textarea id="desc_text" type="text" maxlength="500" cols="30" rows="5" display="inline"/></textarea>
+            <div id="details" >
+                <p>Details:</p>
+                <div class="priority">
+                    <p>Priority:</p>
+                    <input id="priority" type="number">
+                </div>
+                <div class="effort">
+                    <p>Effort:</p>
+                    <input id="effort" type="number">
+                </div>
+            </div>
+
+    </div>
+    <div class="acceptance_criteria">
+        <p>Acceptance criteria:</p>
+        <textarea id="acceptance_criteria" type="text" maxlength="500" cols="30" rows="5"/></textarea>
+    </div>
+
+    <button onclick="addItem()">Add</button>
+    <script src="add_items_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+p {
+    font-size: medium;
+    font-family: Arial;
+    font-weight: bold;
+}
+#description {
+    display: block;
+}
+#status_list {
+    margin-top: 10px;
+}
+textarea{
+    display: inline-block;
+}
+#details{
+    display: inline-block;
+}
