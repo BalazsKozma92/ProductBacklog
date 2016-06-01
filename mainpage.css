@@ -12,7 +12,7 @@ body{
 }
 
 header{
-	height: 200px;
+	height: 100px;
 }
 
 nav{
@@ -44,7 +44,10 @@ nav a:hover{
 	width: 200%;
 	position: relative;
 	left: 0%;
-	transition: all 1.5s;
+	transition: all 1s;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
 }
 
 .menu-wrap, .work-wrap{
@@ -62,36 +65,31 @@ nav a:hover{
 	margin: 0px auto;
 }
 
-.menu-container::after {
+/*.menu-container::after {
   clear: both;
   content: "";
   display: table;
-}
+}*/
 
 .menuUnit{
 	display: block;
 	width: 33%;
-	height: 150px;
+	height: 80px;
 	float: left;
 	position: relative;
-	padding-top: 16%;
+	padding: 40px 0 0 0;
 	cursor: pointer;
+	border-radius: 20px;
+	margin-right: 2px;
+	background: rgba(196, 28, 28, 0.2);
 }
 
-#menu-unit1{
-	background: rgba(40,40,40,0.3);
-	position: center center;
-	size: cover;
+.menuUnit:hover{
+	background: rgba(240, 28, 28, 0.4);
 }
-#menu-unit2{
-	background: rgba(140,140,140,0.3);
-	position: center center;
-	size: cover;
-}
-#menu-unit3{
-	background: rgba(240,240,240,0.3);
-	position: center center;
-	size: cover;
+
+.workplace{
+	border-radius: 20%;
 }
 
 .work-return{
