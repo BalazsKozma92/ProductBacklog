@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="loginpage.css">
-    <title>Product Backlog</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="loginpage.css">
+	<title>Product Backlog</title>
 </head>
 <body>
-<form name="contact" id="contactform" type="post" action="#" onsubmit="" id="textform">
-    <div id="form-group">
-        <div class="field-write">
-            <label for="userName">Username:</label><br>
-            <input class="inputfield" id="userName" type="text" name="userName" size="30"
-                   placeholder="Enter your username"><br>
-        </div>
-        <div class="field-write">
-            <label for="password">Password:</label><br>
-            <input class="inputfield" id="password" type="password" name="password" size="30"
-                   placeholder="Enter your password"><br>
-        </div>
-        <div id="submitbtn">
-            <input id="submit" type="submit" value="Login">
-        </div>
-    </div>
-</form>
-<script src="main.js"></script>
+	<div id="wrapper">
+		<form name="contact" id="contactform" type="post" action="#" onsubmit="#" id="textform">
+			<div id="form-group">
+				<div class="field-write">
+					<label for="userName">Username:</label><br>
+					<input class="inputfield" id="userName" type="text" name="userName" size="30" placeholder="Enter your username"><br>
+				</div>
+				<div class="field-write">
+					<label for="password">Password:</label><br>
+					<input class="inputfield" id="password" type="password" name="password" size="30" placeholder="Enter your password"><br>
+				</div>
+				<div id="submitbtn">
+					<input id="submit" type="submit" value="Login">
+				</div>
+				<div id="loginbtn">
+					<a href="mainpage.html">Login</a>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script src="main.js"></script>
 </body>
 </html>
