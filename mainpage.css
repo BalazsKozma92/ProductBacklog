@@ -50,7 +50,7 @@ nav a:hover{
 	text-transform: uppercase;
 }
 
-.menu-wrap, .work-wrap{
+.menu-wrap, .work-wrap, .work-wrap2, .work-wrap3{
 	width: 50%;
 	float: left;
 }
