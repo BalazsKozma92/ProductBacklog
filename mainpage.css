@@ -11,6 +11,10 @@ body{
 	font-family: Tahoma, Geneva, sans-serif;
 }
 
+header{
+	height: 200px;
+}
+
 nav{
 	float: right;
 	margin: 20px 40px 0 0;
@@ -30,4 +34,71 @@ nav a{
 nav a:hover{
 	color: rgba(0,0,0,1);
 	border-bottom: 2px solid #C70000;
+}
+
+.section-work{
+	overflow-x: hidden;
+}
+
+.work-belt{
+	width: 200%;
+	position: relative;
+	left: 0%;
+	transition: all 1.5s;
+}
+
+.menu-wrap, .work-wrap{
+	width: 50%;
+	float: left;
+}
+
+.menu-container{
+	max-width: 900px;
+	margin: 0px auto;
+}
+
+.work-container{
+	max-width: 600px;
+	margin: 0px auto;
+}
+
+.menu-container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.menuUnit{
+	display: block;
+	width: 33%;
+	height: 150px;
+	float: left;
+	position: relative;
+	padding-top: 16%;
+	cursor: pointer;
+}
+
+#menu-unit1{
+	background: rgba(40,40,40,0.3);
+	position: center center;
+	size: cover;
+}
+#menu-unit2{
+	background: rgba(140,140,140,0.3);
+	position: center center;
+	size: cover;
+}
+#menu-unit3{
+	background: rgba(240,240,240,0.3);
+	position: center center;
+	size: cover;
+}
+
+.work-return{
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	position: absolute;
+	left: 1660px;
+	color: white;
 }

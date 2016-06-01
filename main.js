@@ -1,11 +1,13 @@
-(function () {
-    var userInput = document.getElementById("userName");
-    var pass = document.getElementById("password");
+$(function(){
+	workBelt();
+});
 
-    var doPass = function () {
-        pass.value = userInput.value;
-    };
-
-    userInput.addEventListener("change", doPass);
-}());
-
+function workBelt(){
+	$('.menuUnit').click(function(){
+		$('.work-belt').css('left','-100%');
+	});
+	
+	$('.work-return').click(function(){
+		$('.work-belt').css('left','0%');
+	});
+}
