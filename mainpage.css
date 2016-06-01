@@ -55,6 +55,10 @@ nav a:hover{
 	float: left;
 }
 
+.work-wrap, .work-wrap2, .work-wrap3{
+	display: none;
+}
+
 .menu-container{
 	max-width: 900px;
 	margin: 0px auto;
