@@ -85,7 +85,6 @@
         return isCookieExist;
     };
 
-    userNameField.addEventListener("change", runValidation);
-    passwordField.addEventListener("change", runValidation);
-    submitBtn.addEventListener("mouseover", runValidation);
+    userNameField.addEventListener("input", runValidation);
+    passwordField.addEventListener("input", runValidation);
 }());
